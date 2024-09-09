@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "c451d65d-35ef-4a3b-9494-3f21572eca2c",
+		"name": "B39_Evaluation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37721608"
+	},
+	"item": [
+		{
+			"name": "Schedule_a_Hook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/v1/hooks",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"v1",
+						"hooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Hooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/v1/hooks",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"v1",
+						"hooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAHook_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/v1/hooks/8e3aa909-fb84-4495-944d-a4c192defe66",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"v1",
+						"hooks",
+						"8e3aa909-fb84-4495-944d-a4c192defe66"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Hook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"updated-project\",\r\n    \"domain\": \"api.example.com\",\r\n    \"headerAuthorization\": \"\",\r\n    \"minRetries\": 1,\r\n    \"retryDelaySecs\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/v1/projects/",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"v1",
+						"projects",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteHook_ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURL}}/v1/hooks/8e3aa909-fb84-4495-944d-a4c192defe66",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"v1",
+						"hooks",
+						"8e3aa909-fb84-4495-944d-a4c192defe66"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
